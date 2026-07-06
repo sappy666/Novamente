@@ -1,0 +1,147 @@
+import { SpecialtyInfo, Testimonial, Coordinator } from "./types";
+
+export const coordinators: Coordinator[] = [
+  {
+    id: "cristi",
+    name: "Cristi Carreño",
+    role: "Coordinadora Administrativa",
+    quote: '"Me siento afortunada de impactar positivamente en la vida de cada persona que atendemos. Nos preocupa profundamente el bienestar de cada paciente y de sus familias."',
+    avatarUrl: "https://lh3.googleusercontent.com/aida-public/AB6AXuDUDAAhutC52Ojs5ULA9VhNm0xEa8ZE6UHc7AsPcbeDW4NVVfg5wDF1h3K_kzXY6BrWuTV0zKLDZjCYC062etdxi50dFRveX5DJvzQDNvlEAF_GS8ktZfI-L-gRU4tnbR0B9WRDp4RpsY2lCsaHBTbD87GanwbMeAqsG4ajNQiG5qXAXcpuyIRhaA75KX-rd0R13--1HsRLuZ3yhkDJPQbX2DniEsajn6dvhZwl51sLjIbEypA3K8Xi4bakK53KIPgKp0nL4IP_pe8",
+    initials: "CC",
+  },
+  {
+    id: "joselyn",
+    name: "Joselyn Solis",
+    role: "Supervisora Admisiones",
+    quote: '"Entiendo que iniciar terapia puede generar dudas y emociones, por eso mi labor es guiarlos con empatía, claridad, paciencia y absoluto profesionalismo en su proceso de admisión."',
+    initials: "JS",
+  },
+  {
+    id: "consuelo",
+    name: "Consuelo Guevara",
+    role: "Coordinadora Terapéutica",
+    quote: '"Mi compromiso con cada paciente y su familia es brindar una atención terapéutica cercana, coordinada y efectiva, adaptando el proceso a sus necesidades únicas."',
+    initials: "CG",
+  },
+];
+
+export const specialties: SpecialtyInfo[] = [
+  {
+    id: "fobias",
+    name: "Fobias",
+    icon: "ShieldAlert",
+    description: "Temores irracionales ante objetos o situaciones.",
+    focusAreas: ["Fobia social", "Agorafobia", "Fobias específicas (animales, alturas)", "Ansiedad ante exámenes"],
+    fullDetails: "Trabajamos mediante desensibilización sistemática, terapia cognitivo-conductual (TCC) y exposición gradual en un ambiente controlado y compasivo, permitiéndote recuperar la libertad en tus actividades diarias.",
+  },
+  {
+    id: "ansiedad",
+    name: "Ansiedad",
+    icon: "Wind",
+    description: "Preocupación constante, agitación y tensión.",
+    focusAreas: ["Crisis de pánico", "Ansiedad generalizada", "Ansiedad social", "Estrés postraumático"],
+    fullDetails: "Te entregamos herramientas prácticas de regulación emocional, técnicas de respiración diafragmática y reestructuración de pensamientos automáticos para calmar tu sistema nervioso y recuperar tu paz mental.",
+  },
+  {
+    id: "depresion",
+    name: "Depresión",
+    icon: "Cloud",
+    description: "Tristeza persistente y pérdida de vitalidad.",
+    focusAreas: ["Trastorno depresivo", "Distimia", "Duelo patológico", "Baja autoestima"],
+    fullDetails: "Nuestro enfoque se centra en la activación conductual, el procesamiento emocional de experiencias dolorosas y la reconstrucción de un sentido de propósito, brindándote un espacio cálido de contención.",
+  },
+  {
+    id: "esquizofrenia",
+    name: "Esquizofrenia",
+    icon: "Brain",
+    description: "Acompañamiento integral en psicosis.",
+    focusAreas: ["Contención en crisis", "Psicoeducación familiar", "Habilidades sociales", "Autonomía funcional"],
+    fullDetails: "Ofrecemos un abordaje multidisciplinario y humano que complementa el tratamiento médico. Apoyamos la inserción, el desarrollo de rutinas y la contención emocional tanto para el paciente como para su círculo familiar.",
+  },
+  {
+    id: "ataques-panico",
+    name: "Ataques de Pánico",
+    icon: "Zap",
+    description: "Episodios de miedo intenso y síntomas físicos.",
+    focusAreas: ["Taquicardia por pánico", "Miedo a perder el control", "Desrealización", "Hiperventilación"],
+    fullDetails: "Aprenderás a entender los mecanismos del pánico en el cuerpo, desactivando el miedo al síntoma físico y aplicando técnicas efectivas de enraizamiento (grounding) para frenar las crisis rápidamente.",
+  },
+  {
+    id: "estres",
+    name: "Estrés",
+    icon: "Activity",
+    description: "Sobrecarga física y mental por demandas diarias.",
+    focusAreas: ["Burnout laboral", "Estrés académico", "Tensión muscular crónica", "Fatiga mental"],
+    fullDetails: "Desarrollamos estrategias personalizadas de gestión del tiempo, establecimiento de límites saludables y autocuidado integral, incorporando técnicas de relajación profunda y mindfulness adaptados a tu día a día.",
+  },
+  {
+    id: "anorexia",
+    name: "Anorexia",
+    icon: "Heart",
+    description: "Restricción alimenticia y distorsión de imagen.",
+    focusAreas: ["Distorsión corporal", "Perfeccionismo clínico", "Miedo a subir de peso", "Obsesión por control"],
+    fullDetails: "Brindamos una terapia integral con nutricionistas, psicólogos y terapeutas ocupacionales, enfocada en sanar la relación con el cuerpo y la comida, fortaleciendo la autoestima y la autoaceptación profunda.",
+  },
+  {
+    id: "bulimia",
+    name: "Bulimia",
+    icon: "Smile",
+    description: "Atracones seguidos de conductas compensatorias.",
+    focusAreas: ["Impulsividad alimentaria", "Culpa post-ingesta", "Ansiedad corporal", "Gestión emocional"],
+    fullDetails: "Nos enfocamos en regular los ciclos de alimentación, trabajar sobre los disparadores emocionales y proveer herramientas efectivas de tolerancia al malestar para desarmar las conductas compensatorias.",
+  },
+  {
+    id: "atracones",
+    name: "Atracones",
+    icon: "Utensils",
+    description: "Episodios de ingesta descontrolada de comida.",
+    focusAreas: ["Hambre emocional", "Alimentación ansiosa", "Sensación de descontrol", "Abordaje de la culpa"],
+    fullDetails: "A través del Mindful Eating (alimentación consciente) y la regulación de emociones difíciles, te ayudamos a reconectar con las señales de saciedad biológica de tu cuerpo y construir una relación amorosa y libre.",
+  },
+  {
+    id: "borderline",
+    name: "Borderline",
+    icon: "Users",
+    description: "Inestabilidad emocional y relacional intensa.",
+    focusAreas: ["Desregulación emocional", "Miedo al abandono", "Impulsividad", "Vacío existencial"],
+    fullDetails: "Implementamos componentes de la Terapia Dialéctica Conductual (DBT), enfocados en la efectividad interpersonal, regulación emocional, atención plena y tolerancia al malestar extremo.",
+  },
+];
+
+export const testimonials: Testimonial[] = [
+  {
+    id: "1",
+    quote: "Lo que más valoro es la calidad humana de todos los profesionales que atienden a mi hijo, son muy empáticos y preocupados.",
+    author: "Leslie Estay Zapata",
+    specialty: "Psicología Infantil",
+    initials: "LE",
+  },
+  {
+    id: "2",
+    quote: "Atención muy buena y personalizada, los profesionales son muy dedicados y se nota el avance en cada sesión.",
+    author: "Valeria Contreras Muñoz",
+    specialty: "Fonoaudiología",
+    initials: "VC",
+  },
+  {
+    id: "3",
+    quote: "Me gusta el ambiente, la atención y la disposición de los profesionales para explicar cada proceso terapéutico.",
+    author: "Joan Nesmy Durán",
+    specialty: "Terapia Ocupacional",
+    initials: "JN",
+  },
+  {
+    id: "4",
+    quote: "La ubicación del centro se agradece, pero sobre todo la calidez con la que reciben a los pacientes desde que entras.",
+    author: "Elsa Rojas",
+    specialty: "Fonoaudiología y Terapia Ocupacional",
+    initials: "ER",
+  },
+  {
+    id: "5",
+    quote: "Lo que más valoro es la calidad humana de todos los profesionales, siempre dispuestos a ayudar y orientar a las familias.",
+    author: "Tatiana Miguel",
+    specialty: "Psicopedagogía y Psicología",
+    initials: "TM",
+  },
+];
